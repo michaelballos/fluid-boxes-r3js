@@ -19,7 +19,7 @@ const App = () => {
         <directionalLight 
           castShadow
           position={[0, 10, 0]} 
-          intensity={1.5}
+          intensity={.3}
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
           shadow-camera-far={50}
@@ -40,7 +40,7 @@ const App = () => {
         <BoxOne 
           position={[0, 1, 0]}
           args={[3, 2, 1]}
-          color={'lightblue'}
+          color={'#52FAD3'}
           speed={2}
           />
         <BoxOne 
