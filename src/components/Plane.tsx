@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react'
+
 
 /**
  *  creates a plane to cast shadows on 
  * @returns {React.FC} plane component
  */
 const Plane: React.FC = () => {
+
   return (
     <group>
       <mesh
@@ -21,4 +23,4 @@ const Plane: React.FC = () => {
   )
 }
 
-export default Plane;
+export default Plane

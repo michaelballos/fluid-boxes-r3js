@@ -1,10 +1,14 @@
-import './App.css';
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import BoxOne from './components/BoxOne.tsx';
-import Plane from './components/Plane.tsx';
+import './App.css'
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import BoxOne from './components/BoxOne.tsx'
+import Plane from './components/Plane.tsx'
+import { softShadows } from '@react-three/drei'
+
+softShadows()
 
 const App = () => {
+
   return (
       <Canvas 
         shadows
@@ -36,19 +40,22 @@ const App = () => {
         <BoxOne 
           position={[0, 1, 0]}
           args={[3, 2, 1]}
-          color='lightblue'
+          color={'lightblue'}
+          speed={2}
           />
         <BoxOne 
           position={[-2, 1, -5]} 
-          color='pink'
+          color={'pink'}
+          speed={6}
           />
         <BoxOne 
           position={[5, 1, -2]} 
-          color='pink'
+          color={'pink'}
+          speed={6}
           />
       </Canvas>
 
-  );
+  )
 }
 
-export default App;
+export default App
